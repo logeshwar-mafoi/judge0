@@ -16,7 +16,13 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       cron \
       libpq-dev \
-      sudo && \
+      sudo \
+      curl \
+      gnupg \
+      build-essential \
+      ruby-full \
+      nodejs \
+      npm && \
     rm -rf /var/lib/apt/lists/* && \
     echo "gem: --no-document" > /root/.gemrc && \
     gem install bundler:2.1.4 && \
