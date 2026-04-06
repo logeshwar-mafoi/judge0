@@ -1,4 +1,4 @@
-FROM judge0/compilers:lastest AS production
+FROM ubuntu:22.04
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
